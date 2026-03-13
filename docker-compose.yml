@@ -2,10 +2,9 @@ services:
   postgres:
     image: "postgres:16"
     environment:
-      - DB_HOST=root
-      - DB_PASSWORD=root
-      - DB_NAME=root
-      - DB_PORT=5432
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=root
     ports:
       - 5432:5432
     volumes:
